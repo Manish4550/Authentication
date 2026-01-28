@@ -29,6 +29,14 @@ if (process.env.NODE_ENV === "production") {
 		res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
 	});
 }
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://your-frontend-url.onrender.com",
+  ],
+  credentials: true
+}));
+
 
 app.listen(PORT, () => {
 	connectDB();
