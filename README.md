@@ -6,12 +6,7 @@ This project implements a complete auth flow including email verification, login
 🌐 Live Demo:
 👉 https://authentication-97us.onrender.com
 
-<img width="1536" height="1024" alt="Authentication" src="https://github.com/user-attachments/assets/49d4145e-0487-4a69-99fc-9ccdfb59ce5a" />
-
-
-
-
-
+<img width="1536" height="1024" alt="Authentication" src="https://github.com/user-attachments/assets/cb4711ca-89d5-4811-8a83-41012f573817" />
 
 ✨ Features
 
