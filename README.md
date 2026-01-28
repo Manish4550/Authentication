@@ -1,4 +1,4 @@
-🔐 MERN Authentication App
+🔐 MERN Authentication System
 
 A full-stack authentication and authorization system built using MongoDB, Express, React, and Node.js.
 This project implements a complete auth flow including email verification, login, logout, forgot password, reset password, and protected routes.
