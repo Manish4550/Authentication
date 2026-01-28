@@ -1,7 +1,5 @@
-import dotenv from "dotenv";
-dotenv.config();
 import express from "express";
-
+import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import path from "path";
@@ -10,6 +8,7 @@ import { connectDB } from "./db/connectDB.js";
 
 import authRoutes from "./routes/auth.route.js";
 
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -29,14 +28,6 @@ if (process.env.NODE_ENV === "production") {
 		res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
 	});
 }
-app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://your-frontend-url.onrender.com",
-  ],
-  credentials: true
-}));
-
 
 app.listen(PORT, () => {
 	connectDB();
