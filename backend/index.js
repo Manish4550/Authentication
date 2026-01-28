@@ -21,6 +21,12 @@ app.use(cookieParser()); // allows us to parse incoming cookies
 
 app.use("/api/auth", authRoutes);
 
+app.use(cors({
+  origin: "https://authentication-97us.onrender.com",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true // if you need cookies
+}));
+
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
