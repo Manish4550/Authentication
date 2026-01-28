@@ -4,7 +4,7 @@ import axios from "axios";
 const API_URL =
   import.meta.env.MODE === "development"
     ? "http://localhost:5000/api/auth"
-    : "https://authentication-51nt.onrender.com/api/auth";
+    : "/api/auth";
 
 axios.defaults.withCredentials = true;
 
