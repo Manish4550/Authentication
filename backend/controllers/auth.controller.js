@@ -142,7 +142,7 @@ export const logout = async (req, res) => {
   res.status(200).json({ success: true, message: "logged out successfully" });
 };
 
-export const forgotpassword = async (req, res) => {
+export const forgotPassword = async (req, res) => {
   const { email } = req.body;
 
   try {
@@ -181,7 +181,7 @@ export const forgotpassword = async (req, res) => {
 };
 
 
-export const resetpassword = async(req,res) => {
+export const resetPassword = async(req,res) => {
   try {
     const {token} = req.params;
   const {password} = req.body;
